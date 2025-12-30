@@ -8,7 +8,7 @@
       rel="icon"
       href="./blog-preview-card/blog-preview-card-main/blog-preview-card-main/assets/images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,31 +19,36 @@
   <body>
     <main>
       <article class="blog-card">
-        <header>
-          <img
-            class="graphic"
-            src="./blog-preview-card/blog-preview-card-main/blog-preview-card-main/assets/images/illustration-article.svg"
-            alt="Yellow header blog graphic"
-          />
+        <img
+          class="graphic"
+          src="./blog-preview-card/blog-preview-card-main/blog-preview-card-main/assets/images/illustration-article.svg"
+          alt="Yellow header blog graphic"
+        />
+        <section class="blog-description">
           <div class="blog-category bold-text">Learning</div>
           <p class="date regular-text">Published 21 Dec 2023</p>
-          <p class="blog-title">HTML & CSS foundations</p>
-        </header>
-        <section class="blog-description regular-text">
+          <p class="blog-title bold-text">HTML & CSS foundations</p>
           <p>
             These languages are the backbone of every website, defining
             structure, content, and presentation.
           </p>
         </section>
-        <footer>
+        <footer class="author">
           <img
             class="author-avatar"
             src="./blog-preview-card/blog-preview-card-main/blog-preview-card-main/assets/images/image-avatar.webp"
-            alt="Author's headshot"
+            alt="Photo avatar of the author"
           />
           <p class="author-name">Greg Hooper</p>
         </footer>
       </article>
+      <footer class="credits">
+        Challenge from
+        <a
+          href="https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/FREExM1ND">Aaron Robbins</a>.
+      </footer>
     </main>
   </body>
 </html>
