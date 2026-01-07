@@ -4,7 +4,6 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 0;
   min-height: 100vh;
 }
 
@@ -15,9 +14,89 @@ main {
 
 .blog-card {
   background-color: white;
-  max-height: 501px;
-  max-width: 327px;
-  padding: 1.5rem;
+  height: 501px;
+  width: 327px;
+  border: 1px solid black;
+  border-radius: 1.25rem;
+  margin: 0 auto;
 }
 
-.
+.image-crop {
+  width: 279px;
+  height: 200px;
+  overflow: hidden;
+  margin: 1.5rem auto;
+  border-radius: 10px;
+}
+
+.graphic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.content {
+  width: 17.4375rem;
+}
+
+.blog-description {
+  height: 10.8125rem;
+  margin: 1.5rem auto;
+}
+
+.content-margin {
+  margin: 0.75rem auto;
+}
+
+.blog-category-container {
+  width: 4.5625rem;
+  height: 1.625rem;
+  background-color: hsl(47, 88%, 63%);
+  border-radius: 0.25em;
+}
+
+.blog-title {
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+
+.blog-category {
+  text-align: center;
+}
+
+.text-preset-1 {
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.text-preset-2 {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.text-preset-3 {
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.text-preset-4 {
+  font-weight: 900;
+  font-size: 0.875rem;
+}
+
+.author {
+  display: flex;
+  flex-direction: row;
+  margin-left: 1.25rem;
+}
+
+.author-avatar {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  margin-right: 0.75rem;
+}
+
+.author-name {
+}
