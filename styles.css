@@ -5,6 +5,7 @@ body {
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
+  line-height: 150%;
 }
 
 main {
@@ -19,6 +20,8 @@ main {
   border: 1px solid black;
   border-radius: 1.25rem;
   margin: 0 auto;
+  margin-bottom: 10px;
+  box-shadow: 8px 8px black;
 }
 
 .image-crop {
@@ -54,11 +57,18 @@ main {
   height: 1.625rem;
   background-color: hsl(47, 88%, 63%);
   border-radius: 0.25em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .blog-title {
   font-size: 1.25rem;
   font-weight: 900;
+}
+
+.blog-subtitle {
+  color: rgb(107, 107, 107);
 }
 
 .blog-category {
@@ -85,8 +95,19 @@ main {
   font-size: 0.875rem;
 }
 
+.text-preset-5 {
+  font-weight: 900;
+  font-size: 0.75rem;
+}
+
+.text-preset-6 {
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+
 .author {
   display: flex;
+  align-items: center;
   flex-direction: row;
   margin-left: 1.25rem;
 }
@@ -99,4 +120,9 @@ main {
 }
 
 .author-name {
+}
+
+.credits {
+  font-size: 0.75rem;
+  margin-left: 0.5rem;
 }
