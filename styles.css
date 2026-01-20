@@ -14,8 +14,8 @@ main {
 
 .blog-card {
   background-color: white;
-  height: 501px;
-  width: 327px;
+  height: clamp(501px, 90vh, 522px);
+  width: clamp(327px, 90vw, 384px);
   border: 1px solid black;
   border-radius: 1.25rem;
   margin: 0 auto;
@@ -28,10 +28,11 @@ main {
 }
 
 .image-crop {
-  width: 279px;
+  width: clamp(279px, calc(100% - 3rem), 336px);
   height: 200px;
   overflow: hidden;
   margin: 1.5rem auto;
+  border-radius: 10px;
 }
 
 .graphic {
@@ -60,10 +61,18 @@ main {
   align-items: center;
 }
 
+.date {
+  line-height: 150%;
+}
+
 .blog-title {
   font-size: 1.25rem;
   font-weight: 900;
   line-height: 150%;
+}
+
+.blog-title:hover {
+  color: hsl(47, 88%, 63%);
 }
 
 .blog-subtitle {
@@ -109,8 +118,6 @@ main {
   display: flex;
   align-items: center;
   margin-left: 1.25rem;
-  position: relative;
-  bottom: 0.25rem;
 }
 
 .author-avatar {
@@ -123,11 +130,5 @@ main {
 .credits {
   font-size: 0.75rem;
   margin-left: 0.5rem;
-}
-
-@media screen and (min-width: 720px) {
-  .blog-card {
-    width: 384px;
-    height: 522px;
-  }
+  text-align: center;
 }
