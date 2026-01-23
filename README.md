@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution URL]: (https://www.frontendmentor.io/solutions/responsive-blog-preview-card-with-hover-interaction-in-title-IYZpOF2SSW)
+- [Live Site URL]: (https://freexm1nd.github.io/blog-preview-card-solution/)
 
 ## My process
 
