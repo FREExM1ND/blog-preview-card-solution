@@ -61,14 +61,9 @@ main {
   line-height: 150%;
 }
 
-.blog-title {
-  font-size: 1.25rem;
-  font-weight: 900;
-  line-height: 150%;
-}
-
 .blog-title:hover {
   color: hsl(47, 88%, 63%);
+  cursor: pointer;
 }
 
 .blog-subtitle {

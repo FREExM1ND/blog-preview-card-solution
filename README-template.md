@@ -1,6 +1,6 @@
 # Frontend Mentor - Blog preview card solution
 
-This is a solution to the [Blog preview card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Blog preview card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -16,27 +16,19 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
 
 Users should be able to:
 
-- See hover and focus states for all interactive elements on the page
+- See hover states for all interactive elements on the page.
+- See responsive elements using different screen sizes.
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](./solution-design-screenshots/mobile.jpeg)
+![](./solution-design-screenshots/desktop.jpeg)
 
 ### Links
 
@@ -48,63 +40,75 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
 - Flexbox
-- CSS Grid
+- CSS
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I learned that clamp is a cool way to design responsive websites, but I'm still not totally familiar with calculating the proper values to get the kind of results I want. At least initally, media queries still are my preference, but clamp is certainly more concise.
 
-To see how you can add code snippets, see below:
+Below is some code that reflects the things I learned above:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<section class="blog-description">
+  <div class="blog-category-container">
+    <p class="blog-category text-preset-3-bold">Learning</p>
+  </div>
+  <p class="date text-preset-3">Published 21 Dec 2023</p>
+  <p class="blog-title text-preset-1 content-margin">HTML & CSS foundations</p>
+  <p class="blog-subtitle text-preset-3">
+    These languages are the backbone of every website, defining structure,
+    content, and presentation.
+  </p>
+</section>
 ```
+
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.text-preset-1 {
+  font-weight: 900;
+  font-size: clamp(1.25rem, 0.75rem + 2vw, 1.5rem);
+}
+
+.text-preset-2 {
+  font-weight: 500;
+  font-size: clamp(0.875rem, 0.5vw + 0.75rem, 1rem);
+}
+
+.text-preset-3 {
+  font-weight: 500;
+  font-size: clamp(0.75rem, 0.5vw + 0.75rem, 1rem);
+}
+
+.text-preset-3-bold {
+  font-weight: 900;
+  font-size: 0.75rem;
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+This challenge really tested my patience and my nitpicking. Especially as I continue to produce projects, I want to learn how to develop my CSS layout quickly and effectively, while trying to get my rendition "close enough", not focusing on every pixel difference.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I did have to use media queries for a couple elements, but clamp is definitely a new animal for me. I want to practice clamp more and learn how to more effectively choose values.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+I used the following resources to learn how clamp works and to nail down my values
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [raybo.org](https://raybo.org/posts/2021-02-28-CSS%20Clamp/)
+- [MakeMyChance](https://makemychance.com/css-clamp/)
+- [Claude AI](https://claude.ai/)
+
+I continue to use Responsively to look at my designs on various screen sizes and to take screenshots.
+
+- [Responsively App](https://responsively.app/)
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- GitHub - [Aaron Robbins](https://github.com/FREExM1ND)
+- Frontend Mentor - [@FREExM1ND](https://www.frontendmentor.io/profile/FREExM1ND)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+I'm thankful for the team at Responsively for creating a useful development tool. Thank you to Frontend Mentor for the challenge. I'm eager to do more.
