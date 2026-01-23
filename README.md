@@ -92,6 +92,9 @@ This challenge really tested my patience and my nitpicking. Especially as I cont
 
 I did have to use media queries for a couple elements, but clamp is definitely a new animal for me. I want to practice clamp more and learn how to more effectively choose values.
 
+I made more of an effort to make classes for all elements, especially the text elements.
+This really helped nail down the text presets (font-weight, font-size, color, line-height, etc.)
+
 ### Useful resources
 
 I used the following resources to learn how clamp works and to nail down my values
